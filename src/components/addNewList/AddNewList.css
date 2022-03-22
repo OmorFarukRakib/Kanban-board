@@ -1,0 +1,59 @@
+.AddNew-container {
+  padding-right: 20vw;
+}
+
+.Addnew-form-wrapper {
+  position: relative;
+  max-width: 20rem;
+  min-width: 15rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.Addnew-form-open-btn {
+  font-size: 2.5rem;
+  color: purple;
+  background: none;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.6s ease-out;
+  -o-transition: 0.6s ease-out;
+  transition: 0.6s ease-out;
+}
+
+.Addnew-form-open-btn:hover {
+  -webkit-transform: rotateZ(720deg);
+  -ms-transform: rotate(720deg);
+  transform: rotateZ(720deg);
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+  opacity: 0.5;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

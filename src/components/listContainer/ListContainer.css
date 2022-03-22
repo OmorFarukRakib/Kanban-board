@@ -1,0 +1,22 @@
+
+.ListContainer-container {
+  padding: 10px;
+  padding-left: 2rem;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 2rem;
+     -moz-column-gap: 2rem;
+          column-gap: 2rem;
+  position: relative;
+  margin-top: 14vh;
+}
+
+.ListContainer-end-gap {
+  width: 20vw;
+  height: 1px;
+}

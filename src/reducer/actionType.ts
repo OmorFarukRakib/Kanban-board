@@ -1,0 +1,9 @@
+export const ADD_LIST = 'ADD_LIST';
+export const REMOVE_LIST = 'REMOVE_LIST';
+export const ADD_CARD = 'ADD_CARD';
+export const REMOVE_CARD = 'REMOVE_CARD';
+export const EXCHANGE_CARDS = 'EXCHANGE_CARDS';
+export const EDIT_LIST_TITLE = 'EDIT_LIST_TITLE';
+export const EDIT_CARD_TITLE = 'EDIT_CARD_TITLE';
+export const CARD_LOCK_STATUS_CHANGE = 'CARD_LOCK_STATUS_CHANGE';
+

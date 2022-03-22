@@ -1,13 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  height: 100%;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.Addnew-form-btn {
+  /* CSS for AddNewCard and AddNewList */
+  background-color: #ea4c89;
+  border-radius: 8px;
+  border-style: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0.5rem;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: color 100ms;
+  -o-transition: color 100ms;
+  transition: color 100ms;
+  vertical-align: baseline;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+.Addnew-form-btn:hover,
+.Addnew-form-btn:focus {
+  background-color: #f082ac;
+}
+
+/* Input Field  */
+
+textarea[type="text"] {
+  font: 15px/24px "Muli", sans-serif;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  resize: vertical;
+}
+
+:focus {
+  outline: none;
+}
+.addNew-effect {
+  border: 1px solid #ccc;
+  padding: 7px 14px;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  background: transparent;
+}
+.addNew-effect ~ .focus-border:before,
+.addNew-effect ~ .focus-border:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #2861b6;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+.addNew-effect ~ .focus-border:after {
+  top: auto;
+  bottom: 0;
+  right: auto;
+  left: 0;
+  -webkit-transition-delay: 0.6s;
+  -o-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+.addNew-effect ~ .focus-border i:before,
+.addNew-effect ~ .focus-border i:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 0;
+  background-color: #2861b6;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.addNew-effect ~ .focus-border i:after {
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 0;
+  -webkit-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+.addNew-effect:focus ~ .focus-border:before,
+.addNew-effect:focus ~ .focus-border:after,
+.has-content.addNew-effect ~ .focus-border:before,
+.has-content.addNew-effect ~ .focus-border:after {
+  width: 100%;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transition-delay: 0.6s;
+  -o-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+.addNew-effect:focus ~ .focus-border:after,
+.has-content.effect-21 ~ .focus-border:after {
+  -webkit-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+.addNew-effect:focus ~ .focus-border i:before,
+.addNew-effect:focus ~ .focus-border i:after,
+.has-content.effect-21 ~ .focus-border i:before,
+.has-content.effect-21 ~ .focus-border i:after {
+  height: 100%;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.addNew-effect:focus ~ .focus-border i:after,
+.has-conten.effect-21 ~ .focus-border i:after {
+  -webkit-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+.addNew-effect ~ label {
+  position: absolute;
+  left: 14px;
+  width: 100%;
+  top: 10px;
+  color: #aaa;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  z-index: -1;
+  letter-spacing: 0.5px;
+}
+.addNew-effect:focus ~ label,
+.has-content.effect-21 ~ label {
+  top: -18px;
+  left: 0;
+  font-size: 12px;
+  color: #4caf50;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.input-area {
+  margin-top: 1.5rem;
+}
+
+.scrollbar {
+  margin-left: 30px;
+  float: left;
+  height: 300px;
+  width: 65px;
+  background: #f5f5f5;
+  overflow-y: scroll;
+  margin-bottom: 25px;
+}
+
+.list-scrollbar::-webkit-scrollbar-track {
+  background-color: #f5f5f500;
+  border-radius: 10px;
+}
+
+.list-scrollbar::-webkit-scrollbar {
+  width: 10px;
+  background-color: #c2292900;
+}
+
+.list-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #f90;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.2) 75%,
+    transparent 75%,
+    transparent
+  );
+}
+
+::-webkit-scrollbar-track {
+  border: 1px solid black;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f5f5f500;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  margin-bottom: 2px;
+  background-color: #c2292900;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 1px solid black;
+  border-radius: 10px;
+
+  background-image: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    from(#fc5c7d),
+    to(#6a82fb)
+  );
+
+  background-image: linear-gradient(to left, #fc5c7d, #6a82fb);
 }
