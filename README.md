@@ -22,10 +22,11 @@ Clone this Repo and run below commands
 
 - List Create, Delete, Edit
 - Card Create, Delete, Edit, Lock/Unlock
-- Cards can be dragged if unlocked and swap with other cards and move to other lists.
+- Cards can be dragged if unlocked and swap with other cards and move to other lists
 - Global State Management with Context API, useContext hook and useReducer hook
 - Strict type checking with typescript
 - Raw CSS for UI interface manipulation
+- React portal for Modal implementation
 
 
 ## Limitations
